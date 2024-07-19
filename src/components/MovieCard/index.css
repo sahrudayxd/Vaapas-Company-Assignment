@@ -1,0 +1,54 @@
+.movie-card {
+  width: 100%;
+  border: #000 solid 1px;
+  border-radius: 12px;
+}
+
+@media (min-width: 600px) {
+  .movie-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (min-width: 900px) {
+  .movie-card {
+    width: calc(33.3% - 16px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-card {
+    width: calc(25% - 18px);
+  }
+}
+
+.dog-image {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+@media (min-width: 600px) {
+  .dog-image {
+    height: 220px;
+  }
+}
+
+.movie-content {
+  padding: 16px;
+  padding-top: 6px;
+}
+
+.movie-title {
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-card p {
+  font-size: 16px;
+  margin-top: 6px;
+}

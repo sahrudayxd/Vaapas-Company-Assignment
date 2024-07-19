@@ -1,0 +1,92 @@
+.home-background-gradient {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  background-size: 6rem 4rem;
+}
+
+.home-radial-gradient {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: radial-gradient(circle 800px at 100% 200px, #d5c5ff, transparent);
+}
+
+.home-container {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    padding: 4% 6%;
+  }
+}
+
+.invalid-input-message {
+  color: red;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.status-message-container,
+.in-progress-container,
+.no-results {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 300px;
+}
+
+.welcome-message {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.try-again-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.total-results {
+  width: 100%;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.cards-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+@media (min-width: 500px) {
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
